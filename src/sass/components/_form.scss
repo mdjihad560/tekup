@@ -1,0 +1,66 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="time"],
+input[type="date"],
+input[type="search"],
+input, textarea {
+  margin: 0;
+  width: 100%;
+  height: 60px;
+  font-weight: 700;
+  color:var(--heading-color);
+  font-size: 16px;
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 15px 24px !important;
+  border: none!important;
+  transition: all 0.4s;
+  border: 1px solid var(--heading-color)!important;
+}
+// input:focus, 
+// textarea:focus{
+//   border: 1px solid var(--accent-color)!important;
+// }
+textarea {
+  height: 200px;
+  resize: none;
+  border-radius: 20px;
+  @include max(767px) {
+    height: 100px;
+  }
+}
+
+input::-webkit-input-placeholder, 
+textarea::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+    color:    #666;
+    opacity: 1;
+}
+input:-moz-placeholder, 
+textarea:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+   color:    #666;
+   opacity:  1;
+}
+input::-moz-placeholder, 
+textarea::-moz-placeholder{ /* Mozilla Firefox 19+ */
+   color:    #666;
+   opacity:  1;
+}
+input:-ms-input-placeholder, 
+textarea:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+   color:    #666;
+   opacity: 1;
+}
+input::-ms-input-placeholder, 
+textarea::-ms-input-placeholder{ /* Microsoft Edge */
+   color:    #666;
+   opacity: 1;
+}
+
+input::placeholder, 
+textarea::placeholder{ /* Most modern browsers support this now. */
+   color:    #666;
+   opacity: 1;
+}

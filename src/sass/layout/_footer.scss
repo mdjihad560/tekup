@@ -1,0 +1,309 @@
+.tekup-footer-top{
+  .tekup-default-content {
+    margin-right: 50px;
+    @include max(991px) {
+      margin: 0 auto;
+    }
+    h2{
+      @include max(991px) {
+        max-width: 470px;
+        margin: 0 auto 15px;
+      }
+    }
+}
+
+}
+
+.tekup-footer-bottom{
+  padding: 35px 0;
+  border-top: 1px solid #333;
+  @include max(991px) {
+    padding: 30px;
+  }
+  &.two{
+    border-top: 1px solid #E6E6E6;
+  }
+  &.three{
+    border-top: 1px solid #E6E6E6;
+  }
+  &.four{
+    border-top: 1px solid #302F43;
+  }
+  &.five{
+    border-top: 1px solid #E6E6E6;
+  }
+  
+}
+.tekup-footer-logo{
+  @include max(991px) {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
+.tekup-copywright{
+  &.one{
+    text-align: right;
+    p{
+      color: #999;
+    }
+  }  
+  &.two{
+    p{
+      color: var(--heading-color2);
+    }
+  }
+  &.three{
+    p{
+      color: var(--heading-color);
+      font-weight: 600;
+    }
+    @include max(1199px) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  &.four{
+    p{
+      color: var(--light-color3);
+    }
+  }
+  &.five{
+    p{
+      color: #666;
+    }
+  }
+  
+  @include max(991px) {
+    width: 100%;
+    text-align: center!important;
+  }
+}
+
+
+
+
+.tekup-info {
+  &-wrap{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include max(991px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  margin-bottom: 12px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  ul{
+    li{
+      font-size: 21px;
+      color: var(--accent-color);
+      a{
+        color: var(--white-smoke);
+      }
+    }
+  }
+}
+
+.tekup-hero-shape.tekup-footer-shape{
+  bottom: 10%;
+}
+// End footer one
+
+
+// footer two
+.tekup-footer{
+  &-section2{
+    background-size: cover;
+    background-position: center center;
+  }
+  &-textarea{
+    @include max(1199px) {
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+    img{
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 21px;
+    }
+  }
+  &-title{
+    p{
+      font-size: 21px;
+      margin-bottom: 25px;
+      font-weight: 600;
+      color: var(--heading-color2);
+      @include max(767px) {
+        margin-bottom: 17px;
+      }
+    }
+    &.light{
+      p{
+        color: var(--light-color3);
+      }
+    }
+  }
+  &-menu{
+    @include max(767px) {
+      margin-bottom: 40px;
+    }
+    ul{
+      li{
+        margin: 14px 0;
+        &:first-child{
+          margin-top: 0;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+        a{
+          color: #2C2C2C;
+          font-size: 21px;
+          line-height: 30px;
+          transition: all 0.4s;
+          &:hover{
+            color: var(--orange-color);
+          }
+        }
+      }
+    }
+    &.light{
+      ul{
+        li{
+          a{
+            color: var(--light-color3);
+            &:hover{
+              color: var(--orange-color2);
+            }
+          }
+        }
+      }
+    }
+    &.extar-margin{
+      margin-left: 50px;
+      @include max(1199px) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+
+.tekup-footer-top2 {
+  padding: 100px 0;
+  @include max(767px) {
+    padding: 80px 0;
+  }
+}
+.tekup-footer-menu2{
+  text-align: right;
+  @include max(1199px) {
+    text-align: center;
+  }
+  ul{
+    li{
+      display: inline-block;
+      margin: 0 20px;
+      @include max(767px) {
+        margin: 0 10px;
+      }
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        font-weight: 600;
+        color: var(--heading-color);
+      }
+    }
+  }
+}
+
+
+
+// footer 4
+.tekup-subscription-wrap{
+  padding: 80px 0;
+  border-radius: 20px;
+  background-color: #24243A;
+}
+.tekup-footer{
+  &-section4{
+    padding-top: 130px;
+    background-color: #191931;
+    @include max(991px) {
+      padding-top: 100px;
+    }
+    @include max(767px) {
+      padding-top: 80px;
+    }
+  }
+  &-top4{
+    padding: 80px 0;
+  }
+  &-textarea2{
+    @include max(1199px) {
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+    img{
+      margin-bottom: 30px;
+    }
+    p{
+      font-size: 21px;
+      color: var(--light-color3);
+    }
+  }
+}
+
+// footer five{
+  .tekup-footer-section5{
+    .tekup-footer-title {
+      p{
+        color: var(--heading-color4);
+      }
+    }
+    .tekup-footer-menu ul li a{
+      color: #2C2C2C;
+      &:hover{
+        color: var(--corn-color);
+      }
+    }
+  }
+
+
+.tekup-contact-info2{
+  ul{
+    li{
+      margin: 24px 0;
+      a{
+        i{
+          font-size: 20px;
+          color: var(--orange-color2);
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  &.info3{
+    ul{
+      li{
+        a{
+          i{
+            transition: all 0.4s;
+            color: var(--green-color);
+          }
+          &:hover i{
+            color: var(--corn-color);
+          }
+        }
+      }
+    }
+  }
+}

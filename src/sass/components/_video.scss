@@ -1,0 +1,93 @@
+.tekup-video{
+  &-wrap{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid var(--heading-color);
+  }
+  &-popup{
+    left: 50%;
+    top: 50%;
+    border-radius: 50px;
+    position: absolute;
+    transition: all 0.4s;
+    transform: translate(-50%, -50%);
+    &.play-btn1{
+      box-shadow: 0 4px 0 0 var(--white-smoke);
+      &:hover{
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+
+.waves {
+  position: absolute;
+  width: 185px;
+  height: 185px;
+  background: #000;
+  opacity: 0;
+  border-radius: 100%;
+  left: -35px;
+  top: -35px;
+  z-index: 0;
+  -webkit-animation: waves 3s ease-in-out infinite;
+  animation: waves 3s ease-in-out infinite;
+  z-index: -1;
+  @include max(991px) {
+    width: 160px;
+    height: 160px;
+  }
+  @include max(767px) {
+    width: 130px;
+    height: 130px;
+  }
+  &.wave-1 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  &.wave-2 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  &.wave-3 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+}
+
+
+@keyframes waves {
+  0% {
+      -webkit-transform: scale(0.2, 0.2);
+      transform: scale(0.2, 0.2);
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 0.9;
+  }
+
+  100% {
+      -webkit-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9);
+      opacity: 0;
+  }
+}
+
+
+img.tekup-video-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+img.tekup-video-circle{
+  -webkit-animation: rotate-animation 10s infinite linear;
+  -moz-animation: rotate-animation 10s infinite linear;
+  -o-animation: rotate-animation 10s infinite linear;
+  animation: rotate-animation 10s infinite linear;
+}
+

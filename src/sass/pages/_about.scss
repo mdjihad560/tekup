@@ -1,0 +1,42 @@
+
+
+.tekup-story{
+  &-thumb{
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    border: 5px solid var(--heading-color);
+     img{
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       object-position: center top;
+       transition: all 0.4s;
+     }
+     &:hover img{
+      transform: scale(1.05);
+     }
+  }
+ &-content{
+  @include max(991px) {
+    text-align: center;
+  }
+  h3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    @include max(991px) {
+      margin-bottom: 10px;
+    }
+  }
+  p{
+    @include max(991px) {
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+ }
+}
+
+

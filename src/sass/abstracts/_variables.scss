@@ -1,0 +1,51 @@
+// fonts variable
+$body-font: "Afacad", sans-serif!default;
+$heading-font: "Afacad", sans-serif !default;
+
+// color variable
+:root {
+  --heading-color: #0D0E1D;
+  --body-color: #0D0E1D;
+  --accent-color: #0119FF;
+  --white-color: #ffffff;
+  --dark-bg: #0D0E1D;
+  --white-bg: #ffffff;
+  --accent-bg: #0119FF;
+  --light-bg1: #F5F5F5;
+}
+
+$colors: (
+ 
+);
+
+$bodyfontScale: (
+  xl: (
+    20: 20px,
+    lineheight: 32px,
+  ),
+  lg: (
+    18: 18px,
+    lineheight: 28px,
+  ),
+  md: (
+    16: 16px,
+    lineheight: 24px,
+  ),
+  xs: (
+    14: 14px,
+    lineheight: 22px,
+  ),
+  xss: (
+    12: 12px,
+    lineheight: 20px,
+  ),
+);
+
+// button font size
+$button_font_size: 20px;
+$buton_line_height: 24px;
+$buton_border_radius: 0;
+$button_padding: 18px 38px;
+$button_font_weight: 500;
+$button_font_family: $body-font;
+

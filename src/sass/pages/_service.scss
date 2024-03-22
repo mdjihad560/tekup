@@ -1,0 +1,60 @@
+.tekup-service-details{
+  &-thumb{
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 75px;
+    border: 5px solid var(--heading-color);
+    @include max(991px) {
+      margin-bottom: 55px;
+    }
+    @include max(767px) {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.tekup-user-interface{
+  h3{
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+  ul{
+    li{
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 30px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &:before {
+        content: " ";
+        left: 0;
+        top: 12px;
+        width: 5px;
+        height: 5px;
+        border-radius: 100px;
+        position: absolute;
+        background-color: var(--dark-bg);
+      }
+    }
+  }
+}
+
+.tekup-service-details{
+  &-thumb2{
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid var(--heading-color);
+    @include max(991px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+.tekup-our-approach{
+  margin-top: 45px;
+  @include max(991px) {
+    margin-top: 30px;
+  }
+}

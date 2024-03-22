@@ -1,0 +1,165 @@
+
+header.tekup-header-section {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  padding: 15px 0;
+  transition: all 0.4s;
+}
+header.tekup-header-section.sticky-menu{
+  box-shadow: 0 4px 80px rgb(0 0 0 / 6%);
+}
+
+header.tekup-header-section.tekup-header3{
+  border-bottom: 1px solid var(--heading-color);
+}
+header.tekup-header-section.tekup-header3.sticky-menu{
+  border-bottom: 1px solid var(--light-bg3);
+}
+
+
+
+.site-header .mobile-menu-trigger.light span{
+  background-color: var(--white-smoke);
+  &:before, &:after {
+    background-color: var(--white-smoke);
+  }
+}
+
+
+.tekup-header-wrap{
+  display: flex;
+  align-items: center;
+}
+
+
+// sidebar menu
+.tekup-sidemenu-wraper{
+  position: relative;
+}
+
+.tekup-sidemenu-column {
+    width: 485px;
+    display: block;
+    background: #191931;
+    height: 100%;
+    position: fixed;
+    z-index: 111;
+    padding: 30px;
+    margin-right: -485px;
+    transition: 0.5s;
+    right: 0;
+    top: 0;
+    padding-top: 70px;
+    overflow-y: scroll;
+    .tekup-info-wrap {
+      margin-top: 35px;
+      margin-bottom: 35px;
+  }
+  .tekup-social-icon.tekup-social-icon3{
+    margin-bottom: 30px;
+  }
+  .tekup-copywright4.light p{
+    font-size: 16px;
+  }
+  .tekup-info {
+    ul{
+      li{
+        color: var(--orange-color2);
+      }
+    }
+  }
+}
+.tekup-sidemenu-thumb{
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:5px;
+  }
+}
+
+.tekup-sidemenu-column.active {
+      margin-right: 0px;
+      z-index: 9999;
+}
+
+.tekup-sidemenu-close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #333333;
+    padding: 5px;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.4s;
+    line-height: 1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    background-color: var(--orange-color2);
+}
+.active .tekup-sidemenu-close{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.offcanvas-overlay {
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      position: fixed;
+      z-index: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: .5s;
+ }
+
+.offcanvas-overlay.active {
+      opacity: .7;
+      z-index: 111;
+      visibility: visible;
+ }
+
+
+
+.tekup-sidemenu-logo{
+  margin-bottom: 30px;
+}
+
+.tekup-sidemenu-body {
+  p{
+    color: var(--white-smoke);
+  }
+}
+
+
+.tekup-sidemenu-column::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.tekup-sidemenu-column::-webkit-scrollbar{
+  width: 5px;
+  background-color: #F5F5F5;
+}
+
+.tekup-sidemenu-column::-webkit-scrollbar-thumb{
+  background-color: #000000;
+  border: 2px solid #555555;
+}
+
+
+@media (max-width: 991px) {
+.tekup-sidemenu-wraper{
+  display: none;
+}
+
+}

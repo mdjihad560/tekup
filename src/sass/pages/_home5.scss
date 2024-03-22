@@ -1,0 +1,9 @@
+.tekup-content-thumb3{
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 20px;
+  @include max(991px) {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+}

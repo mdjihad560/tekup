@@ -1,0 +1,42 @@
+.tekup-navigation {
+  margin-top: 80px;
+  text-align: center;
+  @include max(991px) {
+    margin-top: 60px;
+  }
+  .pagination{
+    justify-content: center;
+  }
+}
+
+.tekup-navigation span.current, 
+.page-links .current {
+  cursor: not-allowed;
+  background-color: var(--accent-color);
+  color: var(--heading-color);
+  border-color: var(--accent-color);
+}
+.tekup-navigation a, 
+.tekup-navigation span, 
+.page-links a, 
+.page-links span {
+  height: 50px;
+  width: 50px;
+  display: inline-flex;
+  text-align: center;
+  line-height: 50px;
+  font-size: 21px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  color: var(--body-color);
+  border-radius: 50px;
+  border: 1px solid var(--heading-color);
+}
+
+.tekup-navigation a:hover, 
+.page-links a:hover {
+  background-color: var(--accent-color);
+  color: var(--heading-color);
+  border-color: var(--accent-color);
+}

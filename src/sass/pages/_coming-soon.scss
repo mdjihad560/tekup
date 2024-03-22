@@ -1,0 +1,131 @@
+.tekup-coming-title{
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  h2{
+    margin-bottom: 24px;
+  }
+  p{
+    font-size: 21px;
+    @include max(991px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.tekup-countdown {
+  &-wrap{
+    max-width: 856px;
+    margin: 0 auto;
+    display: grid;
+    gap: 24px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include max(991px) {
+      grid-template-columns:  1fr 1fr;
+    }
+    @include max(767px) {
+      margin-bottom: 30px;
+    }
+  }
+  &-item{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    flex-direction: column;
+    border: 2px solid #000;
+    p{
+      font-size: 24px;
+      font-weight: 600;
+      @include max(991px) {
+        font-size: 20px;
+      }
+    }
+  }
+  
+}
+
+.number{
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 104px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1em;
+  margin-bottom: 10px;
+  letter-spacing: -1.04px;
+  font-family: $heading-font;
+  @include max(1400px) { 
+    font-size: 70px;
+  }
+
+  @include max(767px) { 
+    font-size: 48px;
+  }
+}
+
+.tekup-coming-newsletter {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+    input{
+      color: #FFFDF8;
+      padding-right: 158px!important;
+      margin-bottom: 12px;
+      border: 2px solid var(--dark-bg)!important;
+      background-color: var(--dark-bg);
+
+        &::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
+          color:    #FFFDF8;
+          opacity: 1;
+        }
+        &:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+          color:    #FFFDF8;
+          opacity:  1;
+        }
+        &::-moz-placeholder{ /* Mozilla Firefox 19+ */
+          color:    #FFFDF8;
+          opacity:  1;
+        }
+        &:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+          color:    #FFFDF8;
+          opacity: 1;
+        }
+        &::-ms-input-placeholder{ /* Microsoft Edge */
+          color:    #FFFDF8;
+          opacity: 1;
+        }
+
+        &::placeholder{ /* Most modern browsers support this now. */
+          color:    #FFFDF8;
+          opacity: 1;
+        }
+
+   }
+
+   p{
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.5px;
+   }
+  
+}
+
+button#tekup-notified-btn {
+  border-radius: 50px;
+  background: #BFF747;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  
+}

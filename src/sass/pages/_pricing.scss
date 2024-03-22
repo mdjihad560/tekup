@@ -1,0 +1,103 @@
+
+.tekup-pricing-title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.m_top_responsive{
+  @include max(991px) {
+    margin-top: 35px;
+  }
+}
+.pricing-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  @include max(991px) {
+    margin-bottom: 60px;
+  }
+  @include max(767px) {
+    margin-bottom: 40px;
+  }
+ label {
+    font-weight: 700;
+    margin: 0 20px;
+    @include max(767px) {
+      margin: 0 10px;
+      font-size: 16px;
+    }
+  }
+}
+[data-pricing-dynamic][data-value-active="yearly"] .dynamic-value:before {
+display: inline-block;
+content: attr(data-yearly);
+}
+[data-pricing-dynamic][data-value-active="yearly"] [data-pricing-trigger] {
+background: #ff5722;
+}
+
+[data-pricing-dynamic][data-value-active="yearly"] [data-pricing-trigger] span {
+left: calc(100% - 33px);
+}
+[data-pricing-dynamic][data-value-active="monthly"] .dynamic-value:before {
+display: inline-block;
+content: attr(data-monthly);
+}
+.dynamic-value:before {
+  display: inline-block;
+  content: attr(data-active);
+}
+.static-value:before {
+  display: inline-block;
+  content: attr(data-active);
+}
+.pricing-btn .btn-toggle {
+  position: relative;
+  width: 70px !important;
+  height: 35px;
+  border-radius: 50px;
+  border: none;
+  margin: 0;
+  padding: 0!important;
+  cursor: pointer;
+  background-size: 25px;
+  background-position: center right 5px;
+  background-color: transparent !important;
+  border: 1px solid var(--heading-color)!important;
+  background-image: url(../images/icon/circle.svg);
+}
+.pricing-btn .btn-toggle:focus {
+  outline: none;
+  box-shadow: none;
+  background-image: url(../images/icon/circle.svg);
+}
+.pricing-btn .btn-toggle:checked {
+  background-position: center left 5px;
+  background-image: url(../images/icon/circle.svg);
+}
+
+
+
+.tekup-errors-btn {
+  &.contact-us{
+    width: 200px;
+    margin: 50px 0 0;
+    @include max(991px) {
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+
+  
+}
+
+.tekup-pricing-border {
+  padding: 125px 0 130px;
+  border-bottom: 1px solid #E6E6E6;
+  @include max(991px) {
+    padding: 100px 0;
+  }
+  @include max(767px) {
+    padding: 80px 0;
+  }
+}
