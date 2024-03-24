@@ -20,11 +20,14 @@ h1,
 .h1 {
   font-size: 100px;
   line-height: 1em;
+  margin-bottom: 24px;
+  color: var(--white-color);
   @include max(1400px) { 
     font-size: 70px;
   }
   @include max(767px) { 
     font-size: 48px;
+    margin-bottom: 15px;
   }
 }
 

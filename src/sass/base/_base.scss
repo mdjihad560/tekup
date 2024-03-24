@@ -33,8 +33,6 @@ html {
 
 body {
   height: 100%!important;
-  // line-height: var(--line-height);
-  // font-size: var(--body-font-size);
   color: var(--body-color);
   font-family: $body-font;
   -webkit-font-smoothing: antialiased;
@@ -47,10 +45,6 @@ body {
   counter-reset: my-sec-counter;
   font-size: 22px;
   line-height: 32px;
-  @include max(767px) {
-    font-size: 20px;
-    line-height: 30px;
-  }
 }
 
 hr {

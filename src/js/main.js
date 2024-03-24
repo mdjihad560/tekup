@@ -41,6 +41,13 @@ tekup PRELOADER JS INIT
   $(".tekup-preloader-wrap").fadeOut(500);
 
   /*--------------------------------------------------------------
+HEADER SEARCH JS INIT
+------------------------------------------------------------*/
+  $(".tekup-header-search, .tekup-header-search-close").click(function() {
+    $(".tekup-header-search-section").toggleClass("open");
+  });
+
+  /*--------------------------------------------------------------
 tekup SKILLBAR JS INIT
 ------------------------------------------------------------*/
 var skillbar = $('.tekup-skillbar');
@@ -68,7 +75,7 @@ $(window).on('scroll', function(){
 /*--------------------------------------------------------------
 tekup MENU SIDEBAR JS INIT
 --------------------------------------------------------------*/
-$(".barger-menu").on("click", function (e) {
+$(".tekup-header-barger").on("click", function (e) {
   $(".tekup-sidemenu-column, .offcanvas-overlay").addClass("active");
   event.preventDefault(e);
 });

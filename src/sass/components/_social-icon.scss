@@ -1,0 +1,27 @@
+.tekup-social-icon-box{
+  ul{
+    li{
+      margin-right: 6px;
+      display: inline-block;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        font-size: 18px;
+        border-radius: 100%;
+        align-items: center;
+        transition: all 0.4s;
+        justify-content: center;
+        color: var(--heading-color);
+        background: rgba(245, 245, 245, 1);
+        &:hover{
+          color: var(--white-color);
+          background: var(--accent-bg);
+        }
+      }
+    }
+  }
+}
