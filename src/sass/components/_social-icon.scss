@@ -24,4 +24,74 @@
       }
     }
   }
+  &.style-two{
+    ul{
+      li{
+        a{
+          color: var(--white-color);
+          background: #1F202E;
+          &:hover{
+            background: var(--accent-bg);
+          }
+        }
+      }
+    }
+  }
+  &.style-three{
+    ul{
+      li{
+        a{
+          background: var(--light-bg1);
+          &:hover{
+            color: var(--white-color);
+            background: var(--accent-bg);
+          }
+        }
+      }
+    }
+  }
+  &.right{
+    text-align: right;
+    @include max(767px) {
+      text-align: center;
+    }
+  }
+}
+
+.tekup-social-icon{
+  margin-top: 24px;
+  ul{
+    li{
+      margin-right: 15px;
+      &:last-child{
+        margin-right: 0;
+      }
+      display: inline-block;
+      a{
+        font-size: 16px;
+        transition: all 0.4s;
+        color: var(--white-color);
+        &:hover{
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
+  &.dark-color{
+    ul{
+      li{
+        a{
+          color: var(--heading-color);
+          &:hover{
+            color: var(--accent-color);
+          }
+        }
+      }
+    }
+  }
+}
+.m_bottom{
+  @include max(991px) {
+    margin-bottom: 40px;
+  }
 }

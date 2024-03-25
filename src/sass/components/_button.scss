@@ -12,7 +12,7 @@
   z-index: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
-  display: inline-block;
+  display: inline-flex;
   text-align: center;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
@@ -48,10 +48,17 @@
     width: 17px;
     transform: translate(-60px,60px);
     transition: all 0.2s linear 0s;
-    background-image: url(../images/svg/arrow-top.svg);
+    background-image: url(../images/icon/arrow-top.svg);
   }
   &:hover::before{
     transform: translate(-34px,25px);
+  }
+  &.tekup-white-btn{
+    color: var(--heading-color)!important;
+    background-color: var(--white-bg);
+    &:before{
+      background-image: url(../images/icon/arrow-top-dark.svg);
+    }
   }
   &.tekup-header-btn{
     padding: 14px 35px;

@@ -1,0 +1,43 @@
+.tekup-cta {
+  &-wrap{
+    padding: 100px;
+    line-height: 1.1em;
+    background-size: cover;
+    background-position: center;
+    @include max(991px) {
+      padding: 80px;
+    }
+    @include max(767px) {
+      padding: 50px 15px;
+    }
+  }
+  &-content{
+    &.center{
+      max-width: 600px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    
+    h2{
+      font-size: 80px;
+      margin-bottom: 12px;
+      line-height: 1em;
+      color: var(--white-color);
+      @include max(1199px) {
+        font-size: 70px;
+      }
+      @include max(767px) {
+        font-size: 40px;
+      }
+    }
+    p{
+      color: var(--white-color);
+    }
+    &.dark-color{
+      h2, p{
+        color: var(--heading-color);
+      }
+    }
+  }
+  
+}
