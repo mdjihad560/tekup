@@ -47,19 +47,7 @@ HEADER SEARCH JS INIT
     $(".tekup-header-search-section").toggleClass("open");
   });
 
-  /*--------------------------------------------------------------
-tekup SKILLBAR JS INIT
-------------------------------------------------------------*/
-var skillbar = $('.tekup-skillbar');
-if (skillbar.is_exist()){
-    skillbar.skillBars({
-    from: 0,
-    speed: 4000,
-    interval: 100,
-    decimals: 0,
-  });
-}
- 
+
 /*--------------------------------------------------------------
 tekup STICKY MENU JS INIT
 --------------------------------------------------------------*/
@@ -82,6 +70,67 @@ $(".tekup-header-barger").on("click", function (e) {
 $(".tekup-sidemenu-close, .offcanvas-overlay").on("click", function () {
     $(".tekup-sidemenu-column, .offcanvas-overlay").removeClass("active");
 });
+
+
+/*--------------------------------------------------------------
+ZUBUZ BRAND SLIDER ONE
+--------------------------------------------------------------*/
+var hero_slider = $('.tekup-hero-slider');
+if(hero_slider.is_exist()){
+  hero_slider.slick({
+  infinite: true,
+  slidesToShow: 1, 
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  autoplay: false , 
+  speed: 800,
+  lazyLoad: 'progressive',
+  prevArrow: '<button class="slide-arrow tekup-hero-next"></button>',
+	nextArrow: '<button class="slide-arrow tekup-hero-prev"></button>',
+}).slickAnimation();
+
+
+}
+
+
+
+/*--------------------------------------------------------------
+ZUBUZ BRAND SLIDER ONE
+--------------------------------------------------------------*/
+// var zubuz_brand_slider = $('.zubuz-brand-slider');
+// if(zubuz_brand_slider.is_exist()){
+//   zubuz_brand_slider.slick({
+//   infinite: true,
+//   slidesToShow: 3, 
+//   slidesToScroll: 1,
+//   arrows: false,
+//   dots: false,
+//   autoplay: true , 
+//   autoplaySpeed: 0,
+//   speed: 10000,
+//   cssEase: 'linear',
+//   pauseOnHover:true,
+//   adaptiveHeight: true,
+//   responsive: [
+//   {
+//     breakpoint: 991,
+//     settings: {
+//       slidesToShow: 3,
+//     }
+//   },
+//   {
+//     breakpoint: 767,
+//     settings: {
+//       slidesToShow: 2,
+//     }
+//   },
+
+//   ]
+// });
+
+// }
+
 
 
 /*--------------------------------------------------------------
@@ -120,139 +169,6 @@ var tekup_counter = $('#tekup-counter');
 }
 
 
-/*--------------------------------------------------------------
-tekup IMAGE ROTATE JS INIT
-------------------------------------------------------------*/
- 
-var $rotateTwo = $('#rotatetwo');
-var $win = $(window);
-$win.on('scroll', function () {
-  var right = 18-$win.scrollTop()*0.01;
-  $rotateTwo.css('transform', 'rotate(' + right + 'deg)');
-});
-
-
-/*--------------------------------------------------------------
-tekup AUTO SLIDER JS INIT
-------------------------------------------------------------*/
-var auto_slider = new Swiper('.tekup-auto-slider', {
-  spaceBetween: 0,
-  centeredSlides: true,
-  speed: 6000,
-  autoplay: {
-    delay: .5,
-  },
-  loop: true,
-  slidesPerView:'auto',
-  allowTouchMove: false,
-  disableOnInteraction: true
-});
- 
-/*--------------------------------------------------------------
-tekup PROJECT SLIDER JS INIT
-------------------------------------------------------------*/
-const tekup_project_slider = new Swiper(".tekup-project-slider", {
-  // Optional parameters
-  spaceBetween: 24,
-  direction: 'horizontal',
-  mousewheel: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  mousewheel: {
-    releaseOnEdges: true,
-  },
-
-  // Responsive breakpoints
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-    },
-    900: {
-      slidesPerView: 2,
-    },
-    1600: {
-      slidesPerView: 3.5,
-    },
-    
-  }
-  
-});
-
- 
-/*--------------------------------------------------------------
-tekup PROJECT SLIDER2 JS INIT
-------------------------------------------------------------*/
-const tekup_project_slider2 = new Swiper(".tekup-project-slider2", {
-  // Optional parameters
-  spaceBetween: 24,
-  scrollbar: {
-    el: '.swiper-scrollbar',
-    draggable: true,
-    clickable: false,
-  },
-
-  // Responsive breakpoints
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-    },
-    900: {
-      slidesPerView: 2,
-    },
-    1600: {
-      slidesPerView: 3,
-    },
-    
-  }
-  
-});
-
-/*--------------------------------------------------------------
-tekup PROJECT SLIDER JS INIT
-------------------------------------------------------------*/
-const tekup_instagram_slider = new Swiper(".tekup-instagram-slider", {
-  loop: true,
-  // Responsive breakpoints
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-    },
-    900: {
-      slidesPerView: 3,
-    },
-    1200: {
-      slidesPerView: 4,
-      autoplay: {
-        delay: 1,
-      },
-    },
-    1400: {
-      slidesPerView: 5,
-      
-    },
-    
-  }
-  
-});
-
-
-/*--------------------------------------------------------------
-tekup TESTIMONIAL SLIDER JS INIT
-------------------------------------------------------------*/
-const tekup_t_slider = new Swiper(".tekup-testimonial-slider", {
-  slidesPerView: 1,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  
-});
-
-
 
 /*--------------------------------------------------------------
 tekup MAGNIFIC POPUP JS INIT
@@ -265,74 +181,6 @@ var popup_youtube = $('.video-init');
   });
 
 }
-
-/*--------------------------------------------------------------
-tekup IMAGE SWIPE HOVER JS INIT
-------------------------------------------------------------*/
-
-gsap.set('.tekup-service-increase-row img.swipeimage', { yPercent: -50, xPercent: -50 });
-
-let activeImage;
-gsap.utils.toArray(".tekup-service-increase-row").forEach((el) => {
-  let image = el.querySelector('img.swipeimage'),
-      setX, setY,
-      align = e => {
-          setX(e.clientX);
-          setY(e.clientY);
-      },
-      startFollow = () => document.addEventListener("mousemove", align),
-      stopFollow = () => document.removeEventListener("mousemove", align),
-      fade = gsap.to(image, {autoAlpha: 1, ease: "none", paused: true, onReverseComplete: stopFollow});
-  
-  el.addEventListener('mouseenter', (e) => {
-    fade.play();
-    startFollow();
-    if (activeImage) { // if there's an actively-animating one, we should match its position here
-      gsap.set(image, {x: gsap.getProperty(activeImage, "x"), y: gsap.getProperty(activeImage, "y")});
-    }
-    activeImage = image;
-    setX = gsap.quickTo(image, "x", {duration: 0.6, ease: "power3"}),
-    setY = gsap.quickTo(image, "y", {duration: 0.6, ease: "power3"})
-    align(e);
-  });
-  
-  el.addEventListener('mouseleave', () => fade.reverse());
- 
-});
-
-
-/*--------------------------------------------------------------
-tekup PRICING TABLE JS INIT
-------------------------------------------------------------*/
-    // Table BTN Trigger
-    $("#l5-pricing-btn .toggle-btn").on("click", function (e) {
-      console.log($(e.target).parent().parent().hasClass("monthly-active"));
-      $(e.target).toggleClass("clicked");
-      if ($(e.target).parent().parent().hasClass("monthly-active")) {
-        $(e.target)
-          .parent()
-          .parent()
-          .removeClass("monthly-active")
-          .addClass("yearly-active");
-      } else {
-        $(e.target)
-          .parent()
-          .parent()
-          .removeClass("yearly-active")
-          .addClass("monthly-active");
-      }
-    });
-
-    $("[data-pricing-trigger]").on("click", function (e) {
-      $(e.target).addClass("active").siblings().removeClass("active");
-      var target = $(e.target).attr("data-target");
-      console.log($(target).attr("data-value-active") == "monthly");
-      if ($(target).attr("data-value-active") == "monthly") {
-        $(target).attr("data-value-active", "yearly");
-      } else {
-        $(target).attr("data-value-active", "monthly");
-      }
-    });
 
 
 

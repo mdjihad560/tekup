@@ -13,6 +13,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   display: inline-flex;
+  align-items: center;
   text-align: center;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
@@ -58,6 +59,24 @@
     background-color: var(--white-bg);
     &:before{
       background-image: url(../images/icon/arrow-top-dark.svg);
+    }
+  }
+  &.outline-btn-dark{
+    padding: 17px 38px;
+    color: var(--heading-color)!important;
+    border: 1px solid var(--heading-color);
+    background-color: transparent !important;
+    &:before{
+      background-image: url(../images/icon/arrow-top-dark.svg);
+    }
+  }
+  &.outline-btn-white{
+    padding: 17px 38px;
+    color: var(--white-color)!important;
+    border: 1px solid var(--white-color);
+    background-color: transparent !important;
+    &:before{
+      background-image: url(../images/icon/arrow-top.svg);
     }
   }
   &.tekup-header-btn{

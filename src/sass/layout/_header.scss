@@ -41,6 +41,7 @@ header.tekup-header-section.light-color.sticky-menu{
     &.border_bottom2{
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+    
   }
   &-info{
     &-wrap{
@@ -84,6 +85,9 @@ header.tekup-header-section.light-color.sticky-menu{
 .tekup-header-bottom{
   &.border_bottom{
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  &.border_bottom3{
+    border-bottom: 1px solid #D9D9DB;
   }
   &.header-seven{
     padding: 0 35px;

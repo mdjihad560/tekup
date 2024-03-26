@@ -1,9 +1,15 @@
 .tekup-video{
   &-wrap{
     position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 5px solid var(--heading-color);
+    &.extra-padding-top{
+      margin-top: 130px;
+      @include max(991px) {
+        margin-top: 100px;
+      }
+      @include max(767px) {
+        margin-top: 80px;
+      }
+    }
   }
   &-popup{
     left: 50%;
@@ -12,11 +18,11 @@
     position: absolute;
     transition: all 0.4s;
     transform: translate(-50%, -50%);
-    &.play-btn1{
-      box-shadow: 0 4px 0 0 var(--white-smoke);
-      &:hover{
-        box-shadow: none;
-      }
+    @include max(991px) {
+      width: 100px;
+    }
+    @include max(767px) {
+      width: 70px;
     }
   }
 }
@@ -25,9 +31,9 @@
 
 .waves {
   position: absolute;
-  width: 185px;
-  height: 185px;
-  background: #000;
+  width: 210px;
+  height: 210px;
+  background: var(--white-bg);
   opacity: 0;
   border-radius: 100%;
   left: -35px;
@@ -39,6 +45,8 @@
   @include max(991px) {
     width: 160px;
     height: 160px;
+    left: -30px;
+    top: -30px;
   }
   @include max(767px) {
     width: 130px;
@@ -76,18 +84,3 @@
       opacity: 0;
   }
 }
-
-
-img.tekup-video-icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-img.tekup-video-circle{
-  -webkit-animation: rotate-animation 10s infinite linear;
-  -moz-animation: rotate-animation 10s infinite linear;
-  -o-animation: rotate-animation 10s infinite linear;
-  animation: rotate-animation 10s infinite linear;
-}
-
