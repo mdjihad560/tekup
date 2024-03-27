@@ -1,0 +1,16 @@
+.tekup-thumb{
+  position: relative;
+  @include max(991px) {
+    margin-bottom: 40px;
+  }
+}
+.tekup-thumb-card {
+  bottom: 24px;
+  left: 24px;
+  position: absolute;
+  animation: float-top-bottom  6s ease-in-out infinite;
+  box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
+  @include max(575px) {
+    width: 130px;
+  }
+}

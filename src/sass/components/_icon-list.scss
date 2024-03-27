@@ -1,0 +1,18 @@
+.tekup-icon-list{
+  ul{
+    li{
+      font-weight: 600;
+      padding-left: 30px;
+      position: relative;
+      margin-bottom: 12px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      img{
+        left: 0;
+        top: 10px;
+        position: absolute;
+      }
+    }
+  }
+}

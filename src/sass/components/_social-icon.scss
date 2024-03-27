@@ -50,6 +50,28 @@
       }
     }
   }
+  &.style-four{
+    ul{
+      li{
+        a{
+          background: var(--white-bg);
+          &:hover{
+            color: var(--white-color);
+            background: var(--dark-bg);
+          }
+        }
+      }
+    }
+    &.position{
+      bottom: 0;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center;
+      transition: all 0.4s;
+      position: absolute;
+    }
+  }
   &.right{
     text-align: right;
     @include max(767px) {

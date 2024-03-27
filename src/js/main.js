@@ -73,7 +73,7 @@ $(".tekup-sidemenu-close, .offcanvas-overlay").on("click", function () {
 
 
 /*--------------------------------------------------------------
-ZUBUZ BRAND SLIDER ONE
+tekup BRAND SLIDER ONE
 --------------------------------------------------------------*/
 var hero_slider = $('.tekup-hero-slider');
 if(hero_slider.is_exist()){
@@ -93,14 +93,100 @@ if(hero_slider.is_exist()){
 
 }
 
+/*--------------------------------------------------------------
+tekup BRAND SLIDER ONE
+--------------------------------------------------------------*/
+var four_column_slider = $('.tekup-4column-slider');
+if(four_column_slider.is_exist()){
+  four_column_slider.slick({
+  infinite: true,
+  slidesToShow: 4, 
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  autoplay: false , 
+  responsive: [
+  {
+    breakpoint: 1399,
+    settings: {
+      slidesToShow: 3,
+    }
+  },
+  {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 2,
+    }
+  },
+
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,
+    }
+  },
+
+  ]
+});
+
+}
 
 
 /*--------------------------------------------------------------
-ZUBUZ BRAND SLIDER ONE
+tekup BRAND SLIDER ONE
 --------------------------------------------------------------*/
-// var zubuz_brand_slider = $('.zubuz-brand-slider');
-// if(zubuz_brand_slider.is_exist()){
-//   zubuz_brand_slider.slick({
+var p_slider = $('.tekup-portfolio-slider');
+if(p_slider.is_exist()){
+  p_slider.slick({
+  infinite: true,
+  slidesToShow: 3.7, 
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  autoplay: false , 
+  responsive: [
+  {
+    breakpoint: 1499,
+    settings: {
+      slidesToShow: 2.7,
+    }
+  },
+  {
+    breakpoint: 1199,
+    settings: {
+      slidesToShow: 2.2,
+    }
+  },
+
+  {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 1.5,
+    }
+  },
+
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+    }
+  },
+
+  ]
+});
+
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+tekup BRAND SLIDER ONE
+--------------------------------------------------------------*/
+// var tekup_brand_slider = $('.tekup-brand-slider');
+// if(tekup_brand_slider.is_exist()){
+//   tekup_brand_slider.slick({
 //   infinite: true,
 //   slidesToShow: 3, 
 //   slidesToScroll: 1,
