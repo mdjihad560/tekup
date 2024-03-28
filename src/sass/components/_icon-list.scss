@@ -16,3 +16,22 @@
     }
   }
 }
+
+.tekup-icon-list{
+  &-item{
+    gap: 16px;
+    display: flex;
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &-icon{
+    flex-shrink: 0;
+  }
+  &-data{
+    h5{
+      margin-bottom: 10px;
+    }
+  }
+}

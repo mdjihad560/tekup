@@ -51,7 +51,7 @@
     transition: all 0.4s;
     background-color: var(--white-bg);
     h5{
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
     p{
       font-size: 20px;
@@ -66,3 +66,29 @@
   }
 
 }
+
+// end v1
+
+.tekup-portfolio{
+  &-wrap2{
+    margin-bottom: 24px;
+  }
+  &-data2{
+    padding: 0;
+    background-color: transparent;
+    h5, p{
+      color: var(--white-color);
+    }
+  }
+  &-btn2{
+    top: 0;
+    right: 0;
+  }
+}
+
+.tekup-center-btn {
+  text-align: center;
+  margin-top: 28px;
+}
+
+// End v2

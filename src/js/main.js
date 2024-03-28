@@ -178,6 +178,26 @@ if(p_slider.is_exist()){
 }
 
 
+/*--------------------------------------------------------------
+tekup BRAND SLIDER ONE
+--------------------------------------------------------------*/
+var t_t_slider = $('.tekup-t-two-column-slider');
+if(t_t_slider.is_exist()){
+  t_t_slider.slick({
+  infinite: true,
+  slidesToShow: 1, 
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  autoplay: false , 
+  speed: 800,
+  prevArrow: '<button class="slide-arrow tekup-t-next"></button>',
+	nextArrow: '<button class="slide-arrow tekup-t-prev"></button>',
+})
+
+
+}
+
 
 
 

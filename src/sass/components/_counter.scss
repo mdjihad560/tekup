@@ -1,5 +1,5 @@
 // hero counter
-.tekup-hero-counter{
+.tekup-counter{
   &-wrap{
     gap: 120px;
     display: grid;
@@ -13,58 +13,62 @@
     @include max(767px) {
       grid-template-columns: 1fr;
     }
+    &.wrap2{
+      gap: 0px;
+    }
   }
   text-align: center;
   @include max(767px) {
     max-width: 300px;
     margin: 0 auto;
   }
-  h2{
-    font-size: 80px;
-    line-height: 1em;
-    margin-bottom: 20px;
-    color: var(--white-color);
+  &-data{
+    text-align: center;
+    h2{
+      font-size: 80px;
+      line-height: 1em;
+      margin-bottom: 20px;
+    }
+    h4, h5{
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &.light-color{
+      h2, h4, p{
+        color: var(--white-color);
+      }
+    }
+    
   }
-  h4{
-    color: var(--white-color);
-    margin-bottom: 10px;
+  &-data2{
+    padding: 45px;
+    border: 1px solid #E7E7E8;
+    border-right: 0;
+    &:first-child{
+      border-left: 0;
+    }
+    @include max(1199px) {
+      padding: 30px;
+    }
+    @include max(991px) {
+      &:last-child{
+        border-top: 0;
+        border-left: 0;
+      }
+    }
+    @include max(767px) {
+      &:nth-child(2){
+        border-top: 0;
+        border-left: 0;
+      }
+    }
   }
-  p{
-    font-size: 20px;
-    line-height: 30px;
-    color: var(--white-color);
-  }
+ 
 }
   
 
 
 
-
-.tekup-counter{
-  &-wrap{
-    padding: 30px;
-    border-radius: 25px;
-    text-align: center;
-    background-color: var(--dark-bg);
-    @include max(991px) {
-      margin-top: 30px;
-    }
-  }
-  &-data{
-    padding-bottom: 24px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #333;
-    &:last-child{
-      padding: 0;
-      margin: 0;
-      border: none;    }
-    h2{
-      color: var(--accent-color);
-      margin-bottom: 5px;
-    }
-    p{
-      font-weight: 600;
-      color: var(--white-smoke);
-    }
-  }
-}
