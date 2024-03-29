@@ -104,6 +104,7 @@
     ul{
       li{
         display: inline-block;
+        color: var(--white-color);
       }
     }
   }
@@ -163,8 +164,12 @@
   transition: all .4s;
   border-radius: 100%;
   transform: translateY(-50%);
-  background-image: url(../images/v2/arrow-left.png);
+  color: var(--white-color);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  &:hover{
+    color: var(--accent-color);
+    background-color: var(--white-bg);
+  }
   @include max(767px) {
     display: none;
   }
@@ -173,7 +178,6 @@
 .tekup-hero-slider .tekup-hero-prev {
   left: auto;
   right: 60px;
-  background-image: url(../images/v2/arrow-right.png);
 }
 
 // end v2
@@ -208,7 +212,7 @@
 .tekup-client-rating {
   position: absolute;
   bottom: 100px;
-  animation: float-left-right 6s ease-in-out infinite;
+  // animation: float-left-right 6s ease-in-out infinite;
   box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
 
   @include max(767px) {
@@ -220,7 +224,7 @@
   position: absolute;
   top: 250px;
   right: 0;
-  animation: float-top-bottom  6s ease-in-out infinite;
+  // animation: float-top-bottom  6s ease-in-out infinite;
   box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
   @include max(767px) {
     display: none;

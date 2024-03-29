@@ -7,13 +7,16 @@ header.tekup-header-section {
   transition: all 0.4s;
 }
 header.tekup-header-section.sticky-menu{
-  box-shadow: 0 4px 80px rgb(0 0 0 / 6%);
+  box-shadow: 0 4px 80px rgba(0,0,0,.1);
 }
 // v1
 header.tekup-header-section.light-color.sticky-menu{
   background-color: var(--dark-bg);
 }
 
+// .sticky-menu .tekup-header-top{
+//   display: none;
+// }
 
 .container-fuild{
   max-width: 1920px;
@@ -32,6 +35,7 @@ header.tekup-header-section.light-color.sticky-menu{
 .tekup-header{
   &-top{
     padding: 12px 0;
+    transition: all 0.4s;
     @include max(991px) {
       display: none;
     }
@@ -63,10 +67,12 @@ header.tekup-header-section.light-color.sticky-menu{
           align-items: center;
           font-size: 18px;
           color: var(--white-color);
-          img{
+          i{
             position: absolute;
+            font-size: 22px;
             left: 0;
           }
+          
         }
       }
     }
@@ -75,6 +81,9 @@ header.tekup-header-section.light-color.sticky-menu{
         li{
           a{
             color: var(--heading-color);
+            i{
+              color: var(--accent-color);
+            }
           }
         }
       }
@@ -133,6 +142,20 @@ header.tekup-header-section.light-color.sticky-menu{
 .tekup-header-search {
   cursor: pointer;
   position: relative;
+  &.light-color{
+    i{
+      color: var(--white-color);
+      transition: all 0.4s;
+    }
+    
+  }
+  i{
+    font-size: 24px;
+  }
+  &:hover i{
+    color: var(--accent-color);
+  }
+  
   @include max(767px) {
     display: none;
   }
@@ -164,6 +187,14 @@ header.tekup-header-section.light-color.sticky-menu{
     top: 40px;
     right: 40px;
     cursor: pointer;
+    i{
+      font-size: 30px;
+      color: #6E6E77;
+      transition: all 0.4s;
+    }
+    &:hover i{
+      color: var(--accent-color);
+    }
   }
   
 }
@@ -187,12 +218,20 @@ header.tekup-header-section.light-color.sticky-menu{
     margin-right: 12px;
     border-radius: 100px;
     background-color: var(--light-bg1);
+    i{
+      font-size: 26px;
+      color: var(--accent-color);
+    }
   }
   &-data{
+    h6{
+      color: var(--heading-color);
+    }
     p{
       font-size: 18px;
       margin-bottom: 5px;
       line-height: 1;
+      color: var(--heading-color);
     }
   }
   
@@ -205,10 +244,64 @@ header.tekup-header-section.light-color.sticky-menu{
 
 .tekup-header-barger{
   cursor: pointer;
+  position: relative;
+  width: 60px;
+  height: 24px;
+  display: flex;
+  align-items: center;
   @include max(767px) {
     display: none;
   }
+  span {
+    height: 2px;
+    width: 60px;
+    margin: 4px 0;
+    display: block;
+    position: relative;
+    background-color: var(--white-bg);
+    &:before {
+      content: "";
+      top: -8px;
+      width: 35px;
+      height: 2px;
+      transition: all 0.4s;
+      position: absolute;
+      transform: translateX(15px);
+      background-color: var(--white-bg);
+    }
+    
+    &::after {
+      content: "";
+      bottom: -8px;
+      width: 35px;
+      height: 2px;
+      position: absolute;
+      transition: all 0.4s;
+      transform: translateX(9px);
+      background-color: var(--white-bg);
+    }
+    
+  
+  }
+  &.dark span{
+    background-color: var(--dark-bg);
+  }
+  &.dark span:before, 
+  &.dark span:after {
+    background-color: var(--dark-bg);
+  }
+
+  &:hover span:before{
+    transform: translateX(5px);
+  }
+  &:hover span::after{
+    transform: translateX(15px);
+  }
+  
 }
+
+
+
 .tekup-sidemenu-wraper{
   position: relative;
 }
@@ -248,8 +341,12 @@ header.tekup-header-section.light-color.sticky-menu{
 .tekup-header-sedebar-info{
   margin-bottom: 45px;
 
-  img{
+  i{
+    display: block;
+    font-size: 24px;
     margin-bottom: 15px;
+    line-height: 24px;
+    color: var(--accent-color);
   }
   h5{
     margin-bottom: 6px;
@@ -275,6 +372,14 @@ header.tekup-header-section.light-color.sticky-menu{
   right: 40px;
   top: 40px;
   cursor: pointer;
+  i{
+    font-size: 30px;
+    color: #6E6E77;
+    transition: all 0.4s;
+  }
+  &:hover i{
+    color: var(--accent-color);
+  }
 }
 .active .tekup-sidemenu-close{
   opacity: 1;

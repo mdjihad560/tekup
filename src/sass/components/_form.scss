@@ -122,6 +122,21 @@ button#header-search {
 }
 button#tekup-subscription-btn {
    position: absolute;
-   top: 12px;
+   top: 14px;
    right: 20px;
+   i{
+      color: var(--white-color);
+      transition: all 0.4s;
+      &:hover{
+         color: var(--accent-color);
+      }
+   }
+}
+
+.two{
+   button#tekup-subscription-btn {
+      i{
+         color: var(--accent-color);
+      }
+   }
 }

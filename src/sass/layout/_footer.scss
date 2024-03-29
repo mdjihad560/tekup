@@ -166,10 +166,11 @@
       a{
         font-size: 20px;
         color: var(--white-color);
-        img{
-          position: absolute;
+        i{
+          top: 0;
           left: 0;
-          top: 7px;
+          font-size: 22px;
+          position: absolute;
         }
       }
     }
@@ -180,6 +181,9 @@
 
         a{
           color: var(--heading-color);
+          i{
+            color: var(--accent-color);
+          }
         }
       }
     }
@@ -218,6 +222,10 @@
     align-items: center;
     justify-content: center;
     background-color: var(--accent-bg);
+    i{
+      font-size: 24px;
+      color: var(--white-color);
+    }
   }
   &-data{
     p{

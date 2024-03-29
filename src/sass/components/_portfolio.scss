@@ -63,6 +63,10 @@
     top: 30px;
     right: 24px;
     position: absolute;
+    i{
+      font-size: 30px;
+      color: var(--accent-color);
+    }
   }
 
 }
@@ -83,6 +87,9 @@
   &-btn2{
     top: 0;
     right: 0;
+    i{
+      color: var(--white-color);
+    }
   }
 }
 

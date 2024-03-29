@@ -26,39 +26,37 @@
   overflow: hidden;
   position:relative;
   transform-style: preserve-3d;
-  img{
+  i{
+    font-size: 22px;
     margin-left: 12px;
     transition: all 0.4s ease-in-out;
   }
 
-  &:hover img{
+  &:hover i{
     transform: translate(42px, -42px);
   }
 
   &::before{
     background-repeat: no-repeat;
     position: absolute;
-    content: "";
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    content: "\ea70";
     right: 0;
     top: 0;
     opacity: 1;
     height: 100%;
-    width: 17px;
-    transform: translate(-60px,60px);
+    font-size: 22px;
+    font-family: remixicon !important;
+    transform: translate(-65px,65px);
     transition: all 0.2s linear 0s;
-    background-image: url(../images/icon/arrow-top.svg);
   }
   &:hover::before{
-    transform: translate(-34px,25px);
+    transform: translate(-40px,18px);
   }
   &.tekup-white-btn{
     color: var(--heading-color)!important;
     background-color: var(--white-bg);
     &:before{
-      background-image: url(../images/icon/arrow-top-dark.svg);
+      content: "\ea70";
     }
   }
   &.outline-btn-dark{
@@ -66,23 +64,17 @@
     color: var(--heading-color)!important;
     border: 1px solid var(--heading-color);
     background-color: transparent !important;
-    &:before{
-      background-image: url(../images/icon/arrow-top-dark.svg);
-    }
   }
   &.outline-btn-white{
     padding: 17px 38px;
     color: var(--white-color)!important;
     border: 1px solid var(--white-color);
     background-color: transparent !important;
-    &:before{
-      background-image: url(../images/icon/arrow-top.svg);
-    }
   }
   &.tekup-header-btn{
     padding: 14px 35px;
     &:hover::before{
-      transform: translate(-32px,22px);
+      transform: translate(-35px,15px);
     }
   }
   &.disabled,
