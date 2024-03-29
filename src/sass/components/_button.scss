@@ -1,6 +1,7 @@
 // bootstrap button style
 
-.tekup-default-btn {
+.tekup-default-btn, 
+#tekup-default-btn {
   font-size: $button_font_size;
   line-height: $buton_line_height;
   padding: $button_padding;

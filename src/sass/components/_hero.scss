@@ -25,7 +25,7 @@
   &-section{
     z-index: 0;
     position: relative;
-    padding: 440px 0 130px;
+    padding: 340px 0 130px;
     background-size: cover;
     background-position: center center;
     @include max(1199px) {
@@ -193,6 +193,7 @@
     position: relative;
     @include max(991px) {
       margin-top: 40px;
+      text-align: center;
     }
   }
 }
@@ -214,6 +215,9 @@
   bottom: 100px;
   // animation: float-left-right 6s ease-in-out infinite;
   box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
+  @include max(1199px) {
+    width: 280px;
+  }
 
   @include max(767px) {
     display: none;
@@ -226,6 +230,9 @@
   right: 0;
   // animation: float-top-bottom  6s ease-in-out infinite;
   box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
+  @include max(1199px) {
+    width: 150px;
+  }
   @include max(767px) {
     display: none;
   }

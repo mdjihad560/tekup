@@ -14,9 +14,10 @@ header.tekup-header-section.light-color.sticky-menu{
   background-color: var(--dark-bg);
 }
 
-// .sticky-menu .tekup-header-top{
-//   display: none;
-// }
+.sticky-menu .tekup-header-top{
+  margin-top: -57px;
+  opacity: 0;
+}
 
 .container-fuild{
   max-width: 1920px;
