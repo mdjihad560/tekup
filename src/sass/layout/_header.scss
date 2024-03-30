@@ -338,7 +338,7 @@ header.tekup-header-section.light-color.sticky-menu{
     padding-top: 70px;
     overflow-y: scroll;
     background-color: var(--white-bg);
-    .tekup-info-wrap {
+    .tekup-contact-info-wrap {
       margin-top: 35px;
       margin-bottom: 35px;
   }
@@ -356,9 +356,43 @@ header.tekup-header-section.light-color.sticky-menu{
   }
 }
 
-.tekup-header-sedebar-info{
+.tekup-contact-info{
+  &-wrap{
+    &.wrap2{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      border-top: 1px solid #E7E7E8;
+      @include max(991px) {
+        text-align: center;
+        justify-content: center
+      }
+      @include max(575px) {
+        gap: 0;
+      }
+      .tekup-contact-info{
+        padding-top: 30px;
+        padding-right: 50px;
+        border-right: 1px solid #E7E7E8;
+        @include max(1399px) {
+          padding-right: 30px;
+        }
+        &:last-child{
+          border-right: 0;
+          padding-right: 0;
+          padding-left: 50px;
+          @include max(1399px) {
+            padding-left: 30px;
+          }
+        }
+        @include max(575px) {
+          padding: 25px!important;
+          border-right: 0;
+        }
+      }
+    }
+  }
   margin-bottom: 45px;
-
   i{
     display: block;
     font-size: 24px;
@@ -367,7 +401,7 @@ header.tekup-header-section.light-color.sticky-menu{
     color: var(--accent-color);
   }
   h5{
-    margin-bottom: 6px;
+    margin-bottom: 6px!important;
   }
   p{
     font-size: 20px;
