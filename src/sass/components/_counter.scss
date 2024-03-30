@@ -67,8 +67,24 @@
     }
   }
  
+ 
 }
   
 
-
+.tekup-counter {
+  &-wrap3{
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    @include max(575px) {
+      gap: 30px;
+    }
+  }
+  &-data3{
+    h2{
+      margin-bottom: 5px!important;
+    }
+  }
+  
+}
 

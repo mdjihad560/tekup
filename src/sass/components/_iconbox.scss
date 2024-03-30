@@ -124,9 +124,15 @@
     display: flex;
     gap: 24px;
     transition: all 0.4s;
-    background-color: var(--white-bg);
     &:hover{
+      background-color: var(--white-bg);
       box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
+    }
+    &.border-all{
+      border: 1px solid #E7E7E8;
+      &:hover{
+        border: 1px solid #fff;
+      }
     }
   }
   &-icon3{

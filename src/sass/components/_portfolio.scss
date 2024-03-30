@@ -96,3 +96,72 @@
 }
 
 // End v2
+
+.tekup-portfolio{
+  &-wrap3{
+    transition: all 0.4s;
+    background-color: var(--white-bg);
+    &:hover{
+      box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
+    }
+    &:hover .tekup-portfolio-btn3{
+      top: 50%;
+      opacity: 1;
+      visibility: visible;
+    }
+    &:hover .tekup-portfolio-thumb3::before{
+      opacity: 1;
+    }
+  }
+  &-thumb3{
+    position: relative;
+    &:before {
+      content: "";
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.4s;
+      position: absolute;
+      background: rgba(1, 25, 255, 0.7);
+    }
+  }
+  &-data3{
+    padding: 24px;
+    h3{
+      margin-bottom: 5px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+  &-btn3{
+    left: 50%;
+    top: 60%;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--heading-color)!important;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-bg);
+
+  }
+}
+
+.slider-three {
+  .slick-list.draggable{
+    padding-bottom: 55px;
+  }
+  .slick-dots{
+    margin-top: 0;
+  }
+}

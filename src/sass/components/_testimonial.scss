@@ -9,7 +9,9 @@
     margin-bottom: 20px;
     ul{
       li{
+        font-size: 30px;
         display: inline-block;
+        color: var(--accent-color);
       }
     }
   }
@@ -69,4 +71,43 @@
 .tekup-t-two-column-slider .tekup-t-prev {
   left: auto;
   right: -30px;
+}
+// End v2
+
+.tekup-testimonial{
+  &-box{
+    padding: 28px;
+    margin-bottom: 24px;
+    border: 1px solid #E7E7E8;
+    p{
+      font-size: 26px;
+      line-height: 34px;
+      margin-bottom: 40px;
+      @include max(991px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+  }
+  
+  &-rating{
+    margin-bottom: 15px;
+    ul{
+      li{
+        font-size: 30px;
+        display: inline-block;
+        color: var(--accent-color);
+      }
+    }
+  }
+ 
+  
+  &-author{
+    h5{
+      margin-bottom: 3px;
+    }
+    span{
+      font-size: 20px;
+    }
+  }
 }

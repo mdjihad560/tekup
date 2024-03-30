@@ -12,6 +12,12 @@
       margin-left: 0;
     }
   }
+  &.ml-60{
+    margin-left: 60px;
+    @include max(991px) {
+      margin-left: 0;
+    }
+  }
   @include max(991px) {
     margin-bottom: 40px;
   }

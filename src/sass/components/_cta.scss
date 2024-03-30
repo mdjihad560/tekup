@@ -1,4 +1,8 @@
 .tekup-cta {
+  &-section{
+    background-size: cover;
+    background-position: center;
+  }
   &-wrap{
     padding: 100px;
     line-height: 1.1em;
@@ -16,6 +20,9 @@
       max-width: 600px;
       text-align: center;
       margin: 0 auto;
+    }
+    @include max(991px) {
+      text-align: center;
     }
     
     h2{
@@ -37,6 +44,13 @@
       h2, p{
         color: var(--heading-color);
       }
+    }
+  }
+  &-btn{
+    @include max(991px) {
+      text-align: center;
+      width: 100%;
+      margin-top: 40px;
     }
   }
   
