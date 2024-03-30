@@ -1,16 +1,19 @@
 .tekup-4column-slider .slick-dots, 
-.tekup-portfolio-slider .slick-dots {
+.tekup-portfolio-slider .slick-dots,
+.tekup-portfolio-slider2 .slick-dots {
   display: flex;
   justify-content: center;
   list-style-type: none;
   margin-top: 50px;
 }
 .tekup-4column-slider .slick-dots li, 
-.tekup-portfolio-slider .slick-dots li {
+.tekup-portfolio-slider .slick-dots li,
+.tekup-portfolio-slider2 .slick-dots li {
   margin: 0 8px;
 }
 .tekup-4column-slider .slick-dots button, 
-.tekup-portfolio-slider .slick-dots button {
+.tekup-portfolio-slider .slick-dots button,
+.tekup-portfolio-slider2 .slick-dots button {
   display: block;
   width: 8px;
   height: 8px;
@@ -22,12 +25,15 @@
   transition: all 0.4s;
 }
 .tekup-4column-slider .slick-dots li.slick-active button, 
-.tekup-portfolio-slider .slick-dots li.slick-active button {
+.tekup-portfolio-slider .slick-dots li.slick-active button,
+.tekup-portfolio-slider2 .slick-dots li.slick-active button {
   transform: scale(1.7);
   background-color: var(--accent-bg);
 }
 .tekup-4column-slider .slick-slide, 
-.tekup-portfolio-slider .slick-slide{
+.tekup-portfolio-slider .slick-slide,
+.tekup-portfolio-slider2 .slick-slide,
+.tekup-brand-slider .slick-slide{
   margin: 0 12px;
 }
 

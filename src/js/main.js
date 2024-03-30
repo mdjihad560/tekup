@@ -44,7 +44,7 @@ tekup PRELOADER JS INIT
 HEADER SEARCH JS INIT
 ------------------------------------------------------------*/
   $(".tekup-header-search, .tekup-header-search-close").click(function() {
-    $(".tekup-header-search-section").toggleClass("open");
+    $(".tekup-header-search-section, .search-overlay").toggleClass("open");
   });
 
 
@@ -70,6 +70,19 @@ $(".tekup-header-barger").on("click", function (e) {
 $(".tekup-sidemenu-close, .offcanvas-overlay").on("click", function () {
     $(".tekup-sidemenu-column, .offcanvas-overlay").removeClass("active");
 });
+
+/*--------------------------------------------------------------
+SKILLBAR JS INIT
+------------------------------------------------------------*/
+
+var skillbar = $('.skillbar');
+  if (skillbar.is_exist()){
+      skillbar.skillBars({
+      speed: 8000,
+      interval: 100,
+    });
+}
+
 
 
 /*--------------------------------------------------------------
@@ -181,6 +194,45 @@ if(p_slider.is_exist()){
 /*--------------------------------------------------------------
 tekup BRAND SLIDER ONE
 --------------------------------------------------------------*/
+var p_slider = $('.tekup-portfolio-slider2');
+if(p_slider.is_exist()){
+  p_slider.slick({
+  infinite: true,
+  slidesToShow: 3, 
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  autoplay: false , 
+  responsive: [
+  {
+    breakpoint: 1400,
+    settings: {
+      slidesToShow: 2,
+    }
+  },
+  {
+    breakpoint: 1199,
+    settings: {
+      slidesToShow: 2,
+    }
+  },
+
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+    }
+  },
+
+  ]
+});
+
+}
+
+
+/*--------------------------------------------------------------
+tekup BRAND SLIDER ONE
+--------------------------------------------------------------*/
 var t_t_slider = $('.tekup-t-two-column-slider');
 if(t_t_slider.is_exist()){
   t_t_slider.slick({
@@ -204,38 +256,38 @@ if(t_t_slider.is_exist()){
 /*--------------------------------------------------------------
 tekup BRAND SLIDER ONE
 --------------------------------------------------------------*/
-// var tekup_brand_slider = $('.tekup-brand-slider');
-// if(tekup_brand_slider.is_exist()){
-//   tekup_brand_slider.slick({
-//   infinite: true,
-//   slidesToShow: 3, 
-//   slidesToScroll: 1,
-//   arrows: false,
-//   dots: false,
-//   autoplay: true , 
-//   autoplaySpeed: 0,
-//   speed: 10000,
-//   cssEase: 'linear',
-//   pauseOnHover:true,
-//   adaptiveHeight: true,
-//   responsive: [
-//   {
-//     breakpoint: 991,
-//     settings: {
-//       slidesToShow: 3,
-//     }
-//   },
-//   {
-//     breakpoint: 767,
-//     settings: {
-//       slidesToShow: 2,
-//     }
-//   },
+var tekup_brand_slider = $('.tekup-brand-slider');
+if(tekup_brand_slider.is_exist()){
+  tekup_brand_slider.slick({
+  infinite: true,
+  slidesToShow: 5, 
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  autoplay: true , 
+  autoplaySpeed: 0,
+  speed: 10000,
+  cssEase: 'linear',
+  pauseOnHover:true,
+  adaptiveHeight: true,
+  responsive: [
+  {
+    breakpoint: 991,
+    settings: {
+      slidesToShow: 3,
+    }
+  },
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 2,
+    }
+  },
 
-//   ]
-// });
+  ]
+});
 
-// }
+}
 
 
 

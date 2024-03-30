@@ -73,4 +73,10 @@
       margin-left: 0;
     }
   }
+  &.mr-60{
+    margin-right: 60px;
+    @include max(1399px) {
+      margin-right: 0;
+    }
+  }
 }
