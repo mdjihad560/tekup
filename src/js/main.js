@@ -292,6 +292,60 @@ if(tekup_brand_slider.is_exist()){
 
 
 /*--------------------------------------------------------------
+tekup BRAND SLIDER ONE
+--------------------------------------------------------------*/
+var p_slider = $('.tekup-team-slider');
+if(p_slider.is_exist()){
+  p_slider.slick({
+  infinite: true,
+  slidesToShow: 6, 
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  autoplay: false , 
+  responsive: [
+  {
+    breakpoint: 1400,
+    settings: {
+      slidesToShow: 4,
+    }
+  },
+  {
+    breakpoint: 1199,
+    settings: {
+      slidesToShow: 3,
+    }
+  },
+  {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 2,
+    }
+  },
+
+  {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 2,
+    }
+  },
+
+  {
+    breakpoint: 575,
+    settings: {
+      slidesToShow: 1,
+    }
+  },
+
+  ]
+});
+
+}
+
+
+
+
+/*--------------------------------------------------------------
 tekup COUNTER JS INIT
 --------------------------------------------------------------*/
 var tekup_counter = $('#tekup-counter');
@@ -385,11 +439,11 @@ if(google_map.is_exist()){
         position: new google.maps.LatLng(40.6700, -73.9400),
         map: map,
         // icon: 'assets/images/all-img/contact/map.png',
-        title: 'fugu'
+        title: 'tekup'
       });
       var contentString = '<div id="content">' +
           '<div id="tpw">' +
-          '<h3>fugu' +
+          '<h3>tekup' +
           '</div>';
 
       var infowindow = new google.maps.InfoWindow({

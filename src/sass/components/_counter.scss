@@ -66,8 +66,6 @@
       }
     }
   }
- 
- 
 }
   
 
@@ -86,5 +84,36 @@
     }
   }
   
+}
+// End v4
+
+
+.tekup-counter{
+  &-wrap4{
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    @include max(991px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+
+  &-data4{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 305px;
+    h2{
+      font-size: 80px;
+      line-height: 1em;
+      color: var(--white-color);
+    }
+    p{
+      line-height: 28px;
+      color: var(--white-color);
+    }
+  }
 }
 

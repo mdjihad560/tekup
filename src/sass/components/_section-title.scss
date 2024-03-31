@@ -16,6 +16,12 @@
     padding: 80px 0 56px;
   }
 }
+.tekup-section-padding3{
+  padding: 70px 0;
+  @include max(767px) {
+    padding: 50px 0;
+  }
+}
 .tekup-section-padding-top{
   padding: 130px 0 0;
   @include max(991px) {

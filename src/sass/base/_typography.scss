@@ -36,7 +36,7 @@ h2,
   font-size: 56px;
   line-height: 1.14em; /* 116.667% */
   @include max(991px) { 
-    font-size: 48px;
+    font-size: 50px;
   }
   @include max(767px) { 
     font-size: 40px;

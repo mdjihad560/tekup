@@ -30,7 +30,7 @@ const files = {
     plugins_path: 'src/js/plugins/**/*.js',
     main_js_path: 'src/js/main.js',
     fonts_path: 'src/fonts/**/*',
-    jquery_js_path: 'src/js/jquery-3.6.0.min.js',
+    jquery_js_path: 'src/js/jquery-3.7.1.min.js',
     image_path: 'src/images/**/*.{png,jpeg,jpg,svg,gif,ico}',
     buildOutput:'build'
 };

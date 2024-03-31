@@ -36,3 +36,31 @@
     }
   }
 }
+// End v2
+
+.tekup-icon-list{
+  &-wrap2{
+    gap: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    @include max(1199px) {
+      gap: 24px;
+    }
+  }
+  &-item2{
+    gap: 16px;
+    display: flex;
+    max-width: 210px;
+    align-items: center;
+  }
+  &-icon2{
+    width: 52px;
+    flex-shrink: 0;
+  }
+  &-data2{
+    p{
+      font-weight: 600;
+    }
+  }
+}
+// End v5
