@@ -247,8 +247,28 @@ if(t_t_slider.is_exist()){
 	nextArrow: '<button class="slide-arrow tekup-t-prev"><i class="ri-arrow-right-s-line"></i></button>',
 })
 
+}
+
+
+/*--------------------------------------------------------------
+tekup BRAND SLIDER ONE
+--------------------------------------------------------------*/
+var t_t_slider = $('.tekup-testimonial-slider');
+if(t_t_slider.is_exist()){
+  t_t_slider.slick({
+  infinite: true,
+  slidesToShow: 1, 
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  autoplay: false , 
+  speed: 800,
+  prevArrow: '<button class="slide-arrow tekup-t-next"><i class="ri-arrow-left-s-line"></i></button>',
+	nextArrow: '<button class="slide-arrow tekup-t-prev"><i class="ri-arrow-right-s-line"></i></button>',
+})
 
 }
+
 
 
 
