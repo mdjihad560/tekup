@@ -45,3 +45,45 @@
     background-color: var(--white-bg);
   }
 }
+
+// End team all
+
+// start team details
+.tekup-team-single{
+  &-wrap{
+    margin-bottom: 80px;
+    border: 1px solid #E7E7E8;
+    @include max(991px) {
+      margin-bottom: 60px;
+    }
+  }
+  &-content{
+    padding: 50px;
+    @include max(1199px) {
+      padding: 30px;
+    }
+    h2{
+      margin-bottom: 10px;
+    }
+    span{
+      font-weight: 600;
+      display: block;
+      margin-bottom: 24px;
+      color: var(--accent-color);
+    }
+  }
+}
+
+.tekup-team-form {
+  max-width: 635px;
+  margin: 0 auto;
+  text-align: center;
+  h2{
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
