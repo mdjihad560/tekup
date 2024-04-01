@@ -2,11 +2,12 @@
   &-slider{
     &-wrap{
       border: 1px solid #E7E7E8;
+      background-color: var(--white-bg);
     }
   }
   
   &-rating{
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     ul{
       li{
         font-size: 30px;
@@ -27,12 +28,14 @@
       @include max(1199px) {
         font-size: 30px;
         line-height: 38px;
+        margin-bottom: 30px;
       }
     }
   }
   &-author{
     h5{
       margin-bottom: 5px;
+      line-height: 28px;
     }
     span{
       font-size: 20px;
@@ -59,6 +62,9 @@
   transform: translateY(-50%);
   background-color: var(--white-bg);
   box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
+  @include max(1025px) {
+    left: -25px;
+  }
   &:hover{
     color: var(--white-color);
     background-color: var(--accent-bg);
@@ -71,6 +77,9 @@
 .tekup-t-prev {
   left: auto;
   right: -30px;
+  @include max(1025px) {
+    right: -25px;
+  }
 
 }
 // End v2

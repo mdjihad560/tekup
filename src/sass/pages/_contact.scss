@@ -41,3 +41,17 @@ button#tekup-main-form-btn{
     transform: rotate(45deg);
   }
 }
+
+
+// 
+
+#map{
+  height: 658px;
+  width: 100%;
+  @include max(991px) {
+    height: 500px;
+  }
+  @include max(767px) {
+    height: 400px;
+  }
+}

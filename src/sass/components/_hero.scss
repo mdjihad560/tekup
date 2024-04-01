@@ -5,6 +5,11 @@
   }
 }
 
+.bg-cover{
+  background-size: cover;
+  background-position: center;
+}
+
 .tekup-hero-content.large-content{
   h1{
     font-size: 112px;
@@ -568,7 +573,13 @@
     margin-top: 80px;
   }
   p{
+    margin: 0 0 5px;
     color: var(--heading-color);
+  }
+  ul{
+    li{
+      color: var(--accent-color);
+    }
   }
 }
 

@@ -71,3 +71,65 @@
    
   }
 }
+
+// v4
+
+.tekup-accordion{
+  // &-wrap{
+  //   @include max(991px) {
+  //     margin-top: 40px;
+  //   }
+  // }
+  &-item2{
+    padding: 28px 0;
+    position: relative;
+    transition: all 0.4s;
+    
+    border-bottom: 1px solid #E7E7E8;
+    &:first-child{
+      border-top: 1px solid #E7E7E8;
+    }
+    &.open{
+      .tekup-accordion-body2{
+        display: block;
+      }
+      .tekup-accordion-header2 {
+        h5{
+          color: var(--accent-color);
+        }
+      }
+     
+    }
+  }
+  &-header2{
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+    h5{
+      margin: 0!important;
+      transition: all 0.4s;
+      span{
+        margin-right: 15px;
+        
+        i{
+          font-size: 24px;
+        }
+      }
+    }
+   
+  }
+  &-body2{
+    display: none;
+    padding: 0 30px;
+    padding-top: 10px;
+    &.default{
+      display: block;
+    }
+
+    p{
+      font-size: 20px;
+      line-height: 30px;
+    }
+   
+  }
+}

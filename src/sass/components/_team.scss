@@ -31,6 +31,7 @@
   }
   &-data{
     padding-top: 20px;
+
     h5{
       margin-bottom: 5px;
     }
@@ -38,5 +39,9 @@
       font-size: 20px;
       line-height: 24px;
     }
+  }
+  &-data2{
+    padding: 20px;
+    background-color: var(--white-bg);
   }
 }

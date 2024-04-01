@@ -1,0 +1,18 @@
+{% extends "layout/layout.html" %}
+{% set page_title = "About Us" %}
+ {% block content %}
+
+{% include "../templates/layout/header-footer/main-header.html" %} 
+
+<div class="tekup-breadcrumb" style="background-image: url(assets/images/breadcrumb/breadcrumb.png)">
+  <div class="container">
+    {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+  </div>
+</div>
+<!-- End breadcrumb -->
+
+
+
+{% include "../templates/layout/header-footer/main-footer.html" %} 
+  
+{% endblock %}

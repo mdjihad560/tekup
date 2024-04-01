@@ -1,0 +1,65 @@
+{% extends "layout/layout.html" %}
+{% set page_title = "Our Services" %}
+ {% block content %}
+
+{% include "../templates/layout/header-footer/main-header.html" %} 
+
+<div class="tekup-breadcrumb" style="background-image: url(assets/images/breadcrumb/breadcrumb.png)">
+  <div class="container">
+    {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+  </div>
+</div>
+<!-- End breadcrumb -->
+
+<div class="section tekup-section-padding2">
+  <div class="container">
+    <div class="tekup-section-title center">
+      <h2>Why you should choose us?</h2>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-md-6">
+        <div class="tekup-iconbox-wrap4">
+          <div class="tekup-iconbox-icon4">
+            <img src="assets/images/iconbox/icon8.png" alt="">
+          </div>
+          <div class="tekup-iconbox-data4">
+            <h4>Expert Team Members</h4>
+            <p>We are architects of innovation, trailblazers  technological advancement partners</p>
+            <a class="tekup-iconbox-btn" href="single-service.html">Learn More <i class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="tekup-iconbox-wrap4">
+          <div class="tekup-iconbox-icon4">
+            <img src="assets/images/iconbox/icon9.png" alt="">
+          </div>
+          <div class="tekup-iconbox-data4">
+            <h4>Fastest Customer Service</h4>
+            <p>We are architects of innovation, trailblazers  technological advancement partners</p>
+            <a class="tekup-iconbox-btn" href="single-service.html">Learn More <i class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="tekup-iconbox-wrap4">
+          <div class="tekup-iconbox-icon4">
+            <img src="assets/images/iconbox/icon10.png" alt="">
+          </div>
+          <div class="tekup-iconbox-data4">
+            <h4>Competitive Pricing Plan</h4>
+            <p>We are architects of innovation, trailblazers  technological advancement partners</p>
+            <a class="tekup-iconbox-btn" href="single-service.html">Learn More <i class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End section -->
+
+
+
+{% include "../templates/layout/header-footer/main-footer.html" %} 
+  
+{% endblock %}
