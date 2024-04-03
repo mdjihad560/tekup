@@ -119,10 +119,16 @@ header.tekup-header-section.light-color.sticky-menu{
   align-items: center;
   gap: 24px;
   margin-left: 20px;
+  @include max(991px) {
+    margin-left: 0;
+  }
 }
 .site-header--menu-right{
   .tekup-header-icon{
     margin-left: 50px;
+    @include max(991px) {
+      margin-left: 0;
+    }
   }
 }
 

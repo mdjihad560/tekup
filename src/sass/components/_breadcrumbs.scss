@@ -70,3 +70,26 @@ h1.post__title{
     }
   }
 }
+
+.tekup-errors{
+  &-section{
+    padding: 330px 0 130px;
+    @include max(991px) {
+      padding: 250px 0 100px;
+    }
+    @include max(767px) {
+      padding: 170px 0 80px;
+    }
+  }
+  &-content{
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    img{
+      margin-bottom: 40px;
+    }
+    h2{
+      margin-bottom: 15px;
+    }
+  }
+}

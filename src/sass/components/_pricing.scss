@@ -45,6 +45,11 @@
     i{
       margin-left: 10px;
       font-size: 22px;
+      transition: all 0.4s;
+    }
+    &:hover i{
+      color: var(--white-color);
+      transform: rotate(45deg);
     }
     &.active{
       color: var(--white-color);

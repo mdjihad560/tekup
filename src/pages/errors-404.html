@@ -4,9 +4,16 @@
 
 {% include "../templates/layout/header-footer/main-header.html" %} 
 
-<div class="tekup-breadcrumb" style="background-image: url(assets/images/breadcrumb/breadcrumb.png)">
+<div class="tekup-errors-section">
   <div class="container">
-    {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+    <div class="tekup-errors-content">
+      <img src="assets/images/breadcrumb/errors404.png" alt="">
+      <h2>Oops, this page is not found</h2>
+      <p>The page you’re looking for can’t be found. Double-check the URL and try again. we invite you to visit our homepage.</p>
+      <div class="tekup-extra-mt">
+        <a class="tekup-default-btn left" href="index.html">Start a Project <i class="ri-arrow-right-up-line"></i></a>
+      </div>
+    </div>
   </div>
 </div>
 <!-- End breadcrumb -->

@@ -22,16 +22,16 @@ img {
 
 
 blockquote {
-  font-weight: 700;
   position: relative;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 30px;
-  border-radius: 10px;
   padding: 30px;
   margin: 0 0 24px;
-  color: var(--white-smoke);
+  border-left: 5px solid var(--accent-color);
+  color: var(--accent-color);
   font-family: $heading-font;
-  background-color: var(--dark-bg);
+  background: linear-gradient(90deg, rgba(1, 25, 255, 0.1) 0%, rgba(1, 25, 255, 0) 100%);
+
 }
 .border-transparent {
   border-color: transparent !important;

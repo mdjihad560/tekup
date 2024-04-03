@@ -23,6 +23,15 @@
   }
   &-content{
     padding: 24px;
+    h2{
+      margin-bottom: 15px;
+    }
+    &.blog-page-content{
+      padding: 40px;
+      @include max(991px) {
+        padding: 30px;
+      }
+    }
   }
   &-meta{
     margin-bottom: 15px;

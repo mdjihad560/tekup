@@ -22,6 +22,15 @@
     padding: 50px 0;
   }
 }
+.tekup-section-padding4{
+  padding: 130px 0 106px;
+  @include max(991px) {
+    padding: 100px 0 76px;
+  }
+  @include max(767px) {
+    padding: 80px 0 56px;
+  }
+}
 .tekup-section-padding-top{
   padding: 130px 0 0;
   @include max(991px) {
